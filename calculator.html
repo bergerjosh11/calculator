@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<script>
+	  function calculate() {
+	  	var number1 = Number(document.getElementById("number1").value);
+	  	var number2 = Number(document.getElementById("mumber2").value);
+	  	var operator = document.getElementById("operator");
+	  	var results = document.getElementById("results");
+	  	var answer;
+
+	  	console.log(number1);
+	  	debugger
+	  	if (operator === "+") {}
+	  	answer = number1 + number2;
+	} else if (operator === "-") {}
+	  	answer = number1 - number2;
+	} else if (operator === "*") {}
+	  	answer = number1 - number2;
+	} else if (operator === "/") {}
+	  	answer = number1 / number2;
+	} else 
+		var resultText = ("Does not compute. Learn correct mathematical operations")
+		window.alert(resultText)
+		results.innertext = resultText;
+	  }
+	  results.innerHTML = answer;
+	}
+	</script>
+</head>
+<body>
+	<form id="calculator" onsubmit="calculate(); return false;">
+		<input type="number" id="number1">
+		<input type="text" id="operator">
+		<input type="number" id="number2">
+	<input type = "submit">
+	</form>
+
+	<p>Results <span id="results"></span></p>
+</body>
+<html>
